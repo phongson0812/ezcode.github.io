@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Typing game</title>
+	<meta name="description" content="Typing game for improve 10 finger typing skills" />
+	<meta name="keywords" content="typing game" />
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="js/create.js"></script>
+	<script src="js/words.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+<canvas id="stage" width="500" height="500"></canvas>
+<h1 id="notice">Hello!</h1>
+
+<div class="container">
+	<div id="controls">
+		<h1 id="score"> </h1>
+		<ul id="stats">
+			<li class="level"><h1 id="level"> </h1><label>Level</label></li>
+			<li class="words"><h1 id="words"> </h1><label>Words</label></li>
+			<li class="accuracy"><h1 id="accuracy"> </h1><label>Accuracy</label></li>
+			<li class="sound opt" style="display: none;"><input type="checkbox" id="sound" checked="checked" /><label for="sound">Sound?</label></li>
+			<li class="speed" style="display: none;"><h1 id="speed"></h1><label>Speed</label></li> 
+			<li class="tips opt" style="display: none;"><input type="checkbox" id="tips" /><label for="tips">Tips?</label></li>  
+		</ul>
+	</div>
+
+	<h3 id="tip"> </h3>
+
+	<div id="start">
+		<h2>when it appear, start typing.</h3>
+		<p>Pause / Un-pause the game by pressing the <strong>Space</strong> key.</p>
+		<br />
+		<p>
+			<button id="btn-start">Start</button>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
